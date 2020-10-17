@@ -38,8 +38,9 @@ public class Buscador extends Observable {
         this.texfield = texfield;
     }
 
-    public void buscar(){
+    public void buscar(String fechas){
         //codigo que busca a los automoviles en un rango de fechas y los muestra con el metodo mostrar de Vehículo
+        this.notifyObservers(fechas);
 
     }
 }
