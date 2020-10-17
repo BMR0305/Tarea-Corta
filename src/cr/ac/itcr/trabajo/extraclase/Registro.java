@@ -2,15 +2,15 @@ package cr.ac.itcr.trabajo.extraclase;
 
 public class Registro {
     private String correo;
-    private int numeroCedula;
+    private int cedula;
     private int telefono;
     private String fechaVencimiento;
     private String direccion;
     private String licencia;
 
-    public Registro(String correo, int numeroCedula, int telefono, String fechaVencimiento, String direccion, String licencia) {
+    public Registro(String correo, int cedula, int telefono, String fechaVencimiento, String direccion, String licencia) {
         this.correo = correo;
-        this.numeroCedula = numeroCedula;
+        this.cedula = cedula;
         this.telefono = telefono;
         this.fechaVencimiento = fechaVencimiento;
         this.direccion = direccion;
@@ -26,11 +26,11 @@ public class Registro {
     }
 
     public int getNumeroCedula() {
-        return numeroCedula;
+        return cedula;
     }
 
     public void setNumeroCedula(int numeroCedula) {
-        this.numeroCedula = numeroCedula;
+        this.cedula = numeroCedula;
     }
 
     public int getTelefono() {
@@ -65,10 +65,10 @@ public class Registro {
         this.licencia = licencia;
     }
 
-    public void verificar(){
+    public void verificar(String correo){
         //codigo que verifica el correo de la persona
     }
-    public void registrar(){
+    public void registrar(String correo, int cedula, int telefono, String fechaVencimiento, String direccion, String licencia)){
         //codigo que ingresa a la persona al sistema
     }
 }
