@@ -68,7 +68,7 @@ public class Registro {
     public void verificar(String correo){
         //codigo que verifica el correo de la persona
     }
-    public void registrar(String correo, int cedula, int telefono, String fechaVencimiento, String direccion, String licencia)){
+    public void registrar(){
         //codigo que ingresa a la persona al sistema
     }
 }
